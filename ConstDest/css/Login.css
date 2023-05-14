@@ -20,18 +20,6 @@
       top: 300px;
    }
   
-  .bg {
-  
-    position: absolute;
-    top: 9px;
-    left: 8px;
-    right: 8px;
-    bottom: 8px;
-    background: url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png) center 0px no-repeat ;
-    background-size: contain;
-      
-  }
-  
   .bar {
       position: relative;
       height: 8px;
