@@ -1,33 +1,27 @@
 <?php
+if(isset($_POST['submit_login'])){ 
+include_once('functions.php');
 
-class Login{
+$login = new Login("lucho@gmail.com", "123");
 
-    public $user ="";
-    public $password ="";
-    public $usu ="lucho@gmail.com";
-    public $pass ="123";
-    public $true ="true";
-    public $false ="false";
-
-    function entrarDatos($variable1,$variable2){
-        $this ->user = $variable1;
-        $this ->password = $variable2;
-    }
-
-    function logear(){
-
-        $us = $this->usu;
-        $ps = $this->pass;
-
-        $us1 = $this->user;
-        $pas1 = $this->password;
-
-        if(($us === $us1) && ($ps === $pas1)){
-            return $this->true;
-        } else{
-            return $this->false;
-        }
-    }
+if ($login->validarCredenciales($_POST["email"], $_POST["password"])) {
+    header("Location:../Home.php");
+} else {
+    echo "Credenciales inválidas. Acceso denegado.";
 }
+
+}
+
+
+// if(isset($_POST['submit_logout'])){
+    
+//     $logout = new Logout();
+//     function __destruct(){
+    
+//         $this->logout;
+//     }
+//     header("Location:../Login.php");
+
+// }
 
 ?>
