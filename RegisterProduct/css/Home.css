@@ -1,0 +1,16 @@
+body{
+    background-image: url(https://www.sammobile.com/wp-content/uploads/2023/02/Samsung-Galaxy-S23-Ultra-Misty-Lilac-Back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: 700;
+}
+
+@media (max-width: 700px){
+    .container{
+        margin-left: 0;
+    }
+}
+
+.container{
+    backdrop-filter: blur(20px);
+}
