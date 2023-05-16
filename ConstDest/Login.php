@@ -29,19 +29,19 @@
                 </div>
             </div>
             <div class="col-sm-2 position-absolute top-50 start-50 translate-middle">
-                <form action="./db/functions.php" method="post" class="">
+                <form action="./db/ClassPoo.php" method="post" class="">
                     <div class="row">
                         <h1 class="py-5">Login</h1>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" name="usr" class="form-control" id="email" aria-describedby="emailHelp" required>
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" name="pss" class="form-control" id="password" required>
+                        <input type="password" name="password" class="form-control" id="password" required>
                     </div>
-                    <button type="submit" name="submit" class="btn btn-danger position-absolute start-50 translate-middle-x">Submit</button>
+                    <button type="submit" name="submit_login" class="btn btn-danger position-absolute start-50 translate-middle-x">Submit</button>
                 </form>
             </div>
         </div>
